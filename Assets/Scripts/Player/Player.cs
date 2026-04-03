@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class Player : SingletonMonobehaviour<Player>
 {
+
+    //private WaitForSeconds afterLiftToolAnimationPause;
+    //private WaitForSeconds afterUseToolAnimationPause;
+    //private WaitForSeconds afterPickAnimationPause;
+    //private AnimationOverrides animationOverrides;
+    //private GridCursor gridCursor;
+    //private Cursor cursor;
+
     //Movement Parameters
     private float xInput;
     private float yInput;
@@ -27,6 +35,11 @@ public class Player : SingletonMonobehaviour<Player>
     private bool isPickingDown;
     private bool isPickingLeft;
     private bool isPickingRight;
+    //private WaitForSeconds liftToolAnimationPause;
+    //private WaitForSeconds pickAnimationPause;
+
+    private Camera mainCamera;
+    private bool playerToolUseDisabled = false;
     private ToolEffect toolEffect = ToolEffect.none;
 
     private Rigidbody2D rigidBody2D;
@@ -48,6 +61,9 @@ public class Player : SingletonMonobehaviour<Player>
         base.Awake();
 
         rigidBody2D = GetComponent<Rigidbody2D>();
+
+        //get reference to main camera
+        mainCamera = Camera.main;
     }
 
     private void Update()
@@ -162,5 +178,11 @@ public class Player : SingletonMonobehaviour<Player>
             isIdle = false;
             movementSpeed = Settings.runningSpeed;
         }
+    }
+
+    public Vector3 GetPlayerViewportPosition()
+    {
+        //Vector3 viewport position for player (0,0) viewport bottom left, (1,1) viewport top right
+        return mainCamera.WorldToViewportPoint(transform.position);
     }
 }
