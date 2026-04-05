@@ -234,6 +234,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIInventorySlot8
       objectReference: {fileID: 0}
+    - target: {fileID: 6827192159663774221, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 762265943}
     - target: {fileID: 8353819366211209996, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 7
@@ -380,6 +384,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIInventorySlot6
       objectReference: {fileID: 0}
+    - target: {fileID: 6827192159663774221, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 762265943}
     - target: {fileID: 8353819366211209996, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 7
@@ -574,14 +582,14 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
+    y: 0.17837235
     width: 1
-    height: 0.9998609
+    height: 0.64276755
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 8.21
+  orthographic size: 8.4375
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -782,6 +790,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIInventorySlot7
       objectReference: {fileID: 0}
+    - target: {fileID: 6827192159663774221, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 762265943}
     - target: {fileID: 8353819366211209996, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 7
@@ -925,6 +937,7 @@ MonoBehaviour:
   - {fileID: 1763920392}
   - {fileID: 813883044}
   - {fileID: 1103927413}
+  inventoryBarDraggedItem: {fileID: 5571810984300066442, guid: 76759d31de47d62459f7d500edbf4d6b, type: 3}
 --- !u!1001 &765399281
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1037,6 +1050,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIInventorySlot2
       objectReference: {fileID: 0}
+    - target: {fileID: 6827192159663774221, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 762265943}
     - target: {fileID: 8353819366211209996, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 7
@@ -1178,6 +1195,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIInventorySlot10
       objectReference: {fileID: 0}
+    - target: {fileID: 6827192159663774221, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 762265943}
     - target: {fileID: 8353819366211209996, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 7
@@ -1319,6 +1340,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIInventorySlot11
       objectReference: {fileID: 0}
+    - target: {fileID: 6827192159663774221, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 762265943}
     - target: {fileID: 8353819366211209996, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 7
@@ -1563,6 +1588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIInventorySlot4
       objectReference: {fileID: 0}
+    - target: {fileID: 6827192159663774221, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 762265943}
     - target: {fileID: 8353819366211209996, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 7
@@ -1792,6 +1821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIInventorySlot1
       objectReference: {fileID: 0}
+    - target: {fileID: 6827192159663774221, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 762265943}
     - target: {fileID: 8353819366211209996, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 7
@@ -2067,6 +2100,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIInventorySlot5
       objectReference: {fileID: 0}
+    - target: {fileID: 6827192159663774221, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 762265943}
     - target: {fileID: 8353819366211209996, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 7
@@ -2208,6 +2245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIInventorySlot9
       objectReference: {fileID: 0}
+    - target: {fileID: 6827192159663774221, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 762265943}
     - target: {fileID: 8353819366211209996, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 7
@@ -2463,6 +2504,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIInventorySlot3
       objectReference: {fileID: 0}
+    - target: {fileID: 6827192159663774221, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 762265943}
     - target: {fileID: 8353819366211209996, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 7
@@ -2840,6 +2885,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIInventorySlot0
       objectReference: {fileID: 0}
+    - target: {fileID: 6827192159663774221, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 762265943}
     - target: {fileID: 8353819366211209996, guid: e5cb7d3927bb97345bc878320f680131, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 7
