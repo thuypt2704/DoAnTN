@@ -599,8 +599,8 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
-    height: 1
+    width: 0
+    height: 0
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
@@ -2626,6 +2626,76 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 233b6ebb295a9e24bb043265b7ee32f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1976797073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1976797074}
+  - component: {fileID: 1976797075}
+  m_Layer: 0
+  m_Name: CharacterCustomiser
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1976797074
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976797073}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 501548819543434971}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1976797075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976797073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a51b56ac0741ad42a8a020a6ca2c4df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 8780624677378783473}
+  soAnimationTypeArray:
+  - {fileID: 11400000, guid: efaca60cefacae74a9fa4d32efee6f1c, type: 2}
+  - {fileID: 11400000, guid: 1d92d7ac8e0128640b6a4307e793b555, type: 2}
+  - {fileID: 11400000, guid: 214bdb831e21199428496c5578389472, type: 2}
+  - {fileID: 11400000, guid: 0e0d506deca61ed4b9a2946095104101, type: 2}
+  - {fileID: 11400000, guid: b74087a93adaf2046937963c6a59f60a, type: 2}
+  - {fileID: 11400000, guid: 191b718db6b564047a9ffad60b3ec6b3, type: 2}
+  - {fileID: 11400000, guid: 68e0223b1e2890c49ac17b41df3616e3, type: 2}
+  - {fileID: 11400000, guid: e61fc422ebbb3cb469c3c04b0aa6faea, type: 2}
+  - {fileID: 11400000, guid: c5a213a11ae27654eb08b8138f85a740, type: 2}
+  - {fileID: 11400000, guid: cf5382f618e556c419b10b61534c14a8, type: 2}
+  - {fileID: 11400000, guid: 81a43aa7878f5b1439b8729a96f509c9, type: 2}
+  - {fileID: 11400000, guid: a3d2226ecacc7e44eb14fa4e4fedfdfc, type: 2}
+  - {fileID: 11400000, guid: 166664af56196a446823027f54a040a8, type: 2}
+  - {fileID: 11400000, guid: 5b496dea2619cff4a9981ee4b79605ec, type: 2}
+  - {fileID: 11400000, guid: aee76c494a026b940bdf81312615d80d, type: 2}
+  - {fileID: 11400000, guid: f7cb843dc03a971419d15c5231bcaa8c, type: 2}
+  - {fileID: 11400000, guid: 652c33479eeae0240a3680f2bb42cc41, type: 2}
+  - {fileID: 11400000, guid: 06ddfce5d7053474b9371e531f42cdaf, type: 2}
+  - {fileID: 11400000, guid: 294be8439fec81046a2993a6d6f1c1fa, type: 2}
+  - {fileID: 11400000, guid: e7793e2ba1df07e40a61936426835352, type: 2}
+  - {fileID: 11400000, guid: 75ee625f25bee7a4395f6035cb34fbd0, type: 2}
+  - {fileID: 11400000, guid: 33b9b004a97184943a08ac46c18dc53b, type: 2}
+  - {fileID: 11400000, guid: bdebbed4a7b6760438696539f9eaa282, type: 2}
+  - {fileID: 11400000, guid: ef3e93424d9660e4c80101faedb5e966, type: 2}
 --- !u!1 &264918699838892310
 GameObject:
   m_ObjectHideFlags: 0
@@ -2665,6 +2735,7 @@ Transform:
   - {fileID: 4163103509762362830}
   - {fileID: 8081165925694120101}
   - {fileID: 5632950890316336030}
+  - {fileID: 1976797074}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &832024628260718475
@@ -2862,6 +2933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5273b59f53bd2648b7a3454c2c13813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  equippedItemSpriteRenderer: {fileID: 956045234814565561}
 --- !u!1001 &1736584716145465474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3153,7 +3225,7 @@ Transform:
   m_GameObject: {fileID: 7601722508514119841}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
