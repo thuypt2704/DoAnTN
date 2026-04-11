@@ -7,7 +7,7 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>
 {
 
     private int gameYear = 1;
-    private Season gameSeason = Season.Spring;
+    private Season gameSeason = Season.Summer;
     private int gameDay = 1;
     private int gameHour = 6;
     private int gameMinute = 30;
@@ -144,38 +144,38 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>
         // Call to advance game second event would go here if required
     }
 
-    //private string GetDayOfWeek()
-    //{
-    //    int totalDays = (((int)gameSeason) * 30) + gameDay;
-    //    int dayOfWeek = totalDays % 7;
+    private string GetDayOfWeek()
+    {
+        int totalDays = (((int)gameSeason) * 30) + gameDay;
+        int dayOfWeek = totalDays % 7;
 
-    //    switch (dayOfWeek)
-    //    {
-    //        case 1:
-    //            return "Mon";
+        switch (dayOfWeek)
+        {
+            case 1:
+                return "Mon";
 
-    //        case 2:
-    //            return "Tue";
+            case 2:
+                return "Tue";
 
-    //        case 3:
-    //            return "Wed";
+            case 3:
+                return "Wed";
 
-    //        case 4:
-    //            return "Thu";
+            case 4:
+                return "Thu";
 
-    //        case 5:
-    //            return "Fri";
+            case 5:
+                return "Fri";
 
-    //        case 6:
-    //            return "Sat";
+            case 6:
+                return "Sat";
 
-    //        case 0:
-    //            return "Sun";
+            case 0:
+                return "Sun";
 
-    //        default:
-    //            return "";
-    //    }
-    //}
+            default:
+                return "";
+        }
+    }
 
     //public TimeSpan GetGameTime()
     //{
@@ -185,29 +185,29 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>
     //}
 
 
-    ////TODO:Remove
-    ///// <summary>
-    ///// Advance 1 game minute
-    ///// </summary>
-    //public void TestAdvanceGameMinute()
-    //{
-    //    for (int i = 0; i < 60; i++)
-    //    {
-    //        UpdateGameSecond();
-    //    }
-    //}
+    //TODO:Remove
+    /// <summary>
+    /// Advance 1 game minute
+    /// </summary>
+    public void TestAdvanceGameMinute()
+    {
+        for (int i = 0; i < 60; i++)
+        {
+            UpdateGameSecond();
+        }
+    }
 
-    ////TODO:Remove
-    ///// <summary>
-    ///// Advance 1 day
-    ///// </summary>
-    //public void TestAdvanceGameDay()
-    //{
-    //    for (int i = 0; i < 86400; i++)
-    //    {
-    //        UpdateGameSecond();
-    //    }
-    //}
+    //TODO:Remove
+    /// <summary>
+    /// Advance 1 day
+    /// </summary>
+    public void TestAdvanceGameDay()
+    {
+        for (int i = 0; i < 86400; i++)
+        {
+            UpdateGameSecond();
+        }
+    }
 
     //public void ISaveableRegister()
     //{
