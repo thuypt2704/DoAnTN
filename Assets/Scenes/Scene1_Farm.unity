@@ -12006,7 +12006,7 @@ GameObject:
   - component: {fileID: 826129932}
   m_Layer: 0
   m_Name: Scenary
-  m_TagString: Untagged
+  m_TagString: ItemsParentTransforms
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

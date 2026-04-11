@@ -32,26 +32,25 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         parentCanvas = GetComponentInParent<Canvas>();
     }
 
-    //private void OnDisable()
-    //{
-    //    EventHandler.AfterSceneLoadEvent -= SceneLoaded;
-    //    EventHandler.RemoveSelectedItemFromInventoryEvent -= RemoveSelectedItemFromInventory;
-    //    EventHandler.DropSelectedItemEvent -= DropSelectedItemAtMousePosition;
-    //}
+    private void OnDisable()
+    {
+        EventHandler.AfterSceneLoadEvent -= SceneLoaded;
+        //EventHandler.RemoveSelectedItemFromInventoryEvent -= RemoveSelectedItemFromInventory;
+        //EventHandler.DropSelectedItemEvent -= DropSelectedItemAtMousePosition;
+    }
 
-    //private void OnEnable()
-    //{
-    //    EventHandler.AfterSceneLoadEvent += SceneLoaded;
-    //    EventHandler.RemoveSelectedItemFromInventoryEvent += RemoveSelectedItemFromInventory;
-    //    EventHandler.DropSelectedItemEvent += DropSelectedItemAtMousePosition;
-    //}
+    private void OnEnable()
+    {
+        EventHandler.AfterSceneLoadEvent += SceneLoaded;
+        //EventHandler.RemoveSelectedItemFromInventoryEvent += RemoveSelectedItemFromInventory;
+        //EventHandler.DropSelectedItemEvent += DropSelectedItemAtMousePosition;
+    }
 
     private void Start()
     {
         mainCamera = Camera.main;
         //gridCursor = FindObjectOfType<GridCursor>();
         //cursor = FindObjectOfType<Cursor>();
-        parentItem = GameObject.FindGameObjectWithTag(Tags.ItemsParentTransform).transform;
     }
 
     //private void ClearCursors()
@@ -312,8 +311,8 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         }
     }
 
-    //public void SceneLoaded()
-    //{
-    //    parentItem = GameObject.FindGameObjectWithTag(Tags.ItemsParentTransform).transform;
-    //}
+    public void SceneLoaded()
+    {
+        parentItem = GameObject.FindGameObjectWithTag(Tags.ItemsParentTransform).transform;
+    }
 }
