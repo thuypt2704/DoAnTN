@@ -768,7 +768,7 @@ MonoBehaviour:
   fadeDuration: 1
   faderCanvasGroup: {fileID: 405832988}
   faderImage: {fileID: 405832989}
-  startingSceneName: 0
+  startingSceneName: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,14 +870,14 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.19541779
+    y: 0.09470305
     width: 0.99999994
-    height: 0.60874325
+    height: 0.8116974
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 8.4375
+  orthographic size: 8.21
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1177,7 +1177,7 @@ GameObject:
   - component: {fileID: 762265943}
   m_Layer: 0
   m_Name: UIInventoryBar
-  m_TagString: ItemsParentTransforms
+  m_TagString: ItemsParentTransform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
