@@ -768,7 +768,7 @@ MonoBehaviour:
   fadeDuration: 1
   faderCanvasGroup: {fileID: 405832988}
   faderImage: {fileID: 405832989}
-  startingSceneName: 1
+  startingSceneName: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,9 +870,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.09470305
-    width: 0.99999994
-    height: 0.8116974
+    y: 0
+    width: 1
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
