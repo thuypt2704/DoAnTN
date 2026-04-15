@@ -62,14 +62,14 @@ public enum PartVariantType
     wateringCan,
     count
 }
-//public enum GridBoolProperty
-//{
-//    diggable,
-//    canDropItem,
-//    canPlaceFurniture,
-//    isPath,
-//    isNPCObstacle
-//}
+public enum GridBoolProperty
+{
+    diggable,
+    canDropItem,
+    canPlaceFurniture,
+    isPath,
+    isNPCObstacle
+}
 public enum InventoryLocation
 {
     player,
