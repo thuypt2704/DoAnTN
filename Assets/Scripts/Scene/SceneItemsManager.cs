@@ -147,9 +147,7 @@ public class SceneItemsManager : SingletonMonobehaviour<SceneItemsManager>, ISav
 
         // Create list scene items in scene save and set to scene item list
         SceneSave sceneSave = new SceneSave();
-        //sceneSave.listSceneItem = sceneItemList;
-        sceneSave.listSceneItemDictionary = new Dictionary<string, List<SceneItem>>();
-        sceneSave.listSceneItemDictionary.Add("sceneItemList", sceneItemList);
+        sceneSave.listSceneItem = sceneItemList;
 
         // Add scene save to gameobject
         GameObjectSave.sceneData.Add(sceneName, sceneSave);
