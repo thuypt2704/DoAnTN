@@ -17,7 +17,7 @@ public static class Settings
     //public const float gridCellDiagonalSize = 1.41f; // diagonal distance between unity cell centres
     //public const int maxGridWidth = 99999;
     //public const int maxGridHeight = 99999;
-    //public static Vector2 cursorSize = Vector2.one;
+    public static Vector2 cursorSize = Vector2.one;
 
     //// Player
     //public static float playerCentreYOffset = 0.875f;
@@ -25,10 +25,10 @@ public static class Settings
     // Player Movement
     public const float runningSpeed = 5.333f;
     public const float walkingSpeed = 2.666f;
-    //public static float useToolAnimationPause = 0.25f;
+    public static float useToolAnimationPause = 0.25f;
     //public static float liftToolAnimationPause = 0.4f;
     //public static float pickAnimationPause = 1f;
-    //public static float afterUseToolAnimationPause = 0.2f;
+    public static float afterUseToolAnimationPause = 0.2f;
     //public static float afterLiftToolAnimationPause = 0.4f;
     //public static float afterPickAnimationPause = 0.2f;
 

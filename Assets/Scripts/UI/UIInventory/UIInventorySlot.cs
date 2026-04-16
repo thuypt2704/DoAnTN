@@ -36,14 +36,14 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     {
         EventHandler.AfterSceneLoadEvent -= SceneLoaded;
         //EventHandler.RemoveSelectedItemFromInventoryEvent -= RemoveSelectedItemFromInventory;
-        //EventHandler.DropSelectedItemEvent -= DropSelectedItemAtMousePosition;
+        EventHandler.DropSelectedItemEvent -= DropSelectedItemAtMousePosition;
     }
 
     private void OnEnable()
     {
         EventHandler.AfterSceneLoadEvent += SceneLoaded;
         //EventHandler.RemoveSelectedItemFromInventoryEvent += RemoveSelectedItemFromInventory;
-        //EventHandler.DropSelectedItemEvent += DropSelectedItemAtMousePosition;
+        EventHandler.DropSelectedItemEvent += DropSelectedItemAtMousePosition;
     }
 
     private void Start()
