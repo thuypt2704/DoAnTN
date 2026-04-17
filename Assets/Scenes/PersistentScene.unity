@@ -948,7 +948,7 @@ Camera:
     x: 0
     y: 0
     width: 1
-    height: 0.99881756
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
@@ -2870,12 +2870,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e73f8de4c189c248adf185209e58254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grid: {fileID: 0}
   so_gridPropertiesArray:
   - {fileID: 11400000, guid: 362aeac29e14f5946a847ac4f6a8554a, type: 2}
   - {fileID: 11400000, guid: 1c179f530b45e004f81dd10b2a0d79bb, type: 2}
   - {fileID: 11400000, guid: 3e1026486c0b06840aa4abac7404d7d0, type: 2}
   - {fileID: 11400000, guid: 70e091ab2d1dfe34593c1f49d5d74a4d, type: 2}
+  dugGround:
+  - {fileID: 11400000, guid: 5aa339dbdf2a3624f97db70766237781, type: 2}
+  - {fileID: 11400000, guid: 980890f1f9f4bd8458d81b476808be50, type: 2}
+  - {fileID: 11400000, guid: 9bf2833be769c8f46bd6cb4e036f034a, type: 2}
+  - {fileID: 11400000, guid: 1ede87fc6a1ffab459087bec2a13d130, type: 2}
+  - {fileID: 11400000, guid: b30c44cfacc3bc849bc7c7d7783775e4, type: 2}
+  - {fileID: 11400000, guid: 2ac68e5465ba92741a79774ea0224410, type: 2}
+  - {fileID: 11400000, guid: b201f26891c6d644883ea5a57f88536b, type: 2}
+  - {fileID: 11400000, guid: ea7185c8cd741b54bbb8fbe2891d7c7d, type: 2}
+  - {fileID: 11400000, guid: 358c4f8ab24bbcc4fa651562964f91ff, type: 2}
+  - {fileID: 11400000, guid: 42db6a5fc7686794289ccf8703d50eba, type: 2}
+  - {fileID: 11400000, guid: 1a09921c10507ab4080b9af57d888b7e, type: 2}
+  - {fileID: 11400000, guid: b96aa444d6af7504f84857b60dd47a51, type: 2}
+  - {fileID: 11400000, guid: 504e971c832d2a8458922fa55ea4d60e, type: 2}
+  - {fileID: 11400000, guid: 5ed85e0a706fa984498d0e3eb372d050, type: 2}
+  - {fileID: 11400000, guid: d9eda705828d507498a1a456fda2e8ed, type: 2}
+  - {fileID: 11400000, guid: 998990e9defe4c440b62328b7ed1c97c, type: 2}
 --- !u!114 &1665804654
 MonoBehaviour:
   m_ObjectHideFlags: 0

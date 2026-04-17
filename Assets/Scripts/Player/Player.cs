@@ -525,8 +525,8 @@ public class Player : SingletonMonobehaviour<Player>
         // Set grid property to dug
         GridPropertiesManager.Instance.SetGridPropertyDetails(gridPropertyDetails.gridX, gridPropertyDetails.gridY, gridPropertyDetails);
 
-        //// Display dug grid tiles
-        //GridPropertiesManager.Instance.DisplayDugGround(gridPropertyDetails);
+        // Display dug grid tiles
+        GridPropertiesManager.Instance.DisplayDugGround(gridPropertyDetails);
 
 
         // After animation pause
