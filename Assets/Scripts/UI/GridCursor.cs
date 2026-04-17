@@ -126,7 +126,7 @@ public class GridCursor : MonoBehaviour
                     }
                     break;
 
-                //case ItemType.Watering_tool:
+                case ItemType.Watering_tool:
                 //case ItemType.Breaking_tool:
                 //case ItemType.Chopping_tool:
                 case ItemType.Hoeing_tool:
@@ -239,15 +239,15 @@ public class GridCursor : MonoBehaviour
                     return false;
                 }
 
-            //case ItemType.Watering_tool:
-            //    if (gridPropertyDetails.daysSinceDug > -1 && gridPropertyDetails.daysSinceWatered == -1)
-            //    {
-            //        return true;
-            //    }
-            //    else
-            //    {
-            //        return false;
-            //    }
+            case ItemType.Watering_tool:
+                if (gridPropertyDetails.daysSinceDug > -1 && gridPropertyDetails.daysSinceWatered == -1)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
 
             //case ItemType.Chopping_tool:
             //case ItemType.Collecting_tool:
@@ -277,14 +277,14 @@ public class GridCursor : MonoBehaviour
             //                    return false;
             //                }
             //            }
-                        //else
-                        //{
-                        //    return false;
-                        //}
-                //    }
-                //}
+            //else
+            //{
+            //    return false;
+            //}
+            //    }
+            //}
 
-                //return false;
+            //return false;
 
 
             default:

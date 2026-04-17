@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Player : SingletonMonobehaviour<Player>
 {
 
-    //private WaitForSeconds afterLiftToolAnimationPause;
+    private WaitForSeconds afterLiftToolAnimationPause;
     private WaitForSeconds afterUseToolAnimationPause;
     //private WaitForSeconds afterPickAnimationPause;
     private AnimationOverrides animationOverrides;
@@ -37,7 +37,7 @@ public class Player : SingletonMonobehaviour<Player>
     private bool isPickingDown;
     private bool isPickingLeft;
     private bool isPickingRight;
-    //private WaitForSeconds liftToolAnimationPause;
+    private WaitForSeconds liftToolAnimationPause;
     //private WaitForSeconds pickAnimationPause;
 
     private Camera mainCamera;
@@ -123,10 +123,10 @@ public class Player : SingletonMonobehaviour<Player>
         gridCursor = FindObjectOfType<GridCursor>();
         //cursor = FindObjectOfType<Cursor>();
         useToolAnimationPause = new WaitForSeconds(Settings.useToolAnimationPause);
-        //liftToolAnimationPause = new WaitForSeconds(Settings.liftToolAnimationPause);
+        liftToolAnimationPause = new WaitForSeconds(Settings.liftToolAnimationPause);
         //pickAnimationPause = new WaitForSeconds(Settings.pickAnimationPause);
         afterUseToolAnimationPause = new WaitForSeconds(Settings.afterUseToolAnimationPause);
-        //afterLiftToolAnimationPause = new WaitForSeconds(Settings.afterLiftToolAnimationPause);
+        afterLiftToolAnimationPause = new WaitForSeconds(Settings.afterLiftToolAnimationPause);
         //afterPickAnimationPause = new WaitForSeconds(Settings.afterPickAnimationPause);
     }
 
@@ -302,12 +302,12 @@ public class Player : SingletonMonobehaviour<Player>
                     }
                     break;
 
-                //case ItemType.Watering_tool:
+                case ItemType.Watering_tool:
                 //case ItemType.Breaking_tool:
                 //case ItemType.Chopping_tool:
-                //case ItemType.Hoeing_tool:
+                case ItemType.Hoeing_tool:
                 //case ItemType.Reaping_tool:
-                case ItemType.Collecting_tool:
+                //case ItemType.Collecting_tool:
                     ProcessPlayerClickInputTool(gridPropertyDetails, itemDetails, playerDirection);
                     break;
 
@@ -434,12 +434,12 @@ public class Player : SingletonMonobehaviour<Player>
                 }
                 break;
 
-            //case ItemType.Watering_tool:
-            //    if (gridCursor.CursorPositionIsValid)
-            //    {
-            //        WaterGroundAtCursor(gridPropertyDetails, playerDirection);
-            //    }
-            //    break;
+            case ItemType.Watering_tool:
+                if (gridCursor.CursorPositionIsValid)
+                {
+                    WaterGroundAtCursor(gridPropertyDetails, playerDirection);
+                }
+                break;
 
             //case ItemType.Chopping_tool:
             //    if (gridCursor.CursorPositionIsValid)
@@ -536,66 +536,66 @@ public class Player : SingletonMonobehaviour<Player>
         playerToolUseDisabled = false;
     }
 
-    //private void WaterGroundAtCursor(GridPropertyDetails gridPropertyDetails, Vector3Int playerDirection)
-    //{
-    //    //Play sound
-    //    AudioManager.Instance.PlaySound(SoundName.effectWateringCan);
+    private void WaterGroundAtCursor(GridPropertyDetails gridPropertyDetails, Vector3Int playerDirection)
+    {
+        ////Play sound
+        //AudioManager.Instance.PlaySound(SoundName.effectWateringCan);
 
-    //    // Trigger animation
-    //    StartCoroutine(WaterGroundAtCursorRoutine(playerDirection, gridPropertyDetails));
-    //}
+        // Trigger animation
+        StartCoroutine(WaterGroundAtCursorRoutine(playerDirection, gridPropertyDetails));
+    }
 
-    //private IEnumerator WaterGroundAtCursorRoutine(Vector3Int playerDirection, GridPropertyDetails gridPropertyDetails)
-    //{
-    //    PlayerInputIsDisabled = true;
-    //    playerToolUseDisabled = true;
+    private IEnumerator WaterGroundAtCursorRoutine(Vector3Int playerDirection, GridPropertyDetails gridPropertyDetails)
+    {
+        PlayerInputIsDisabled = true;
+        playerToolUseDisabled = true;
 
-    //    // Set tool animation to watering can in override animation
-    //    toolCharacterAttribute.partVariantType = PartVariantType.wateringCan;
-    //    characterAttributeCustomisationList.Clear();
-    //    characterAttributeCustomisationList.Add(toolCharacterAttribute);
-    //    animationOverrides.ApplyCharacterCustomisationParameters(characterAttributeCustomisationList);
+        // Set tool animation to watering can in override animation
+        toolCharacterAttribute.partVariantType = PartVariantType.wateringCan;
+        characterAttributeCustomisationList.Clear();
+        characterAttributeCustomisationList.Add(toolCharacterAttribute);
+        animationOverrides.ApplyCharacterCustomisationParameters(characterAttributeCustomisationList);
 
-    //    // TODO: If there is water in the watering can
-    //    toolEffect = ToolEffect.watering;
+        // TODO: If there is water in the watering can
+        toolEffect = ToolEffect.watering;
 
-    //    if (playerDirection == Vector3Int.right)
-    //    {
-    //        isLiftingToolRight = true;
-    //    }
-    //    else if (playerDirection == Vector3Int.left)
-    //    {
-    //        isLiftingToolLeft = true;
-    //    }
-    //    else if (playerDirection == Vector3Int.up)
-    //    {
-    //        isLiftingToolUp = true;
-    //    }
-    //    else if (playerDirection == Vector3Int.down)
-    //    {
-    //        isLiftingToolDown = true;
-    //    }
+        if (playerDirection == Vector3Int.right)
+        {
+            isLiftingToolRight = true;
+        }
+        else if (playerDirection == Vector3Int.left)
+        {
+            isLiftingToolLeft = true;
+        }
+        else if (playerDirection == Vector3Int.up)
+        {
+            isLiftingToolUp = true;
+        }
+        else if (playerDirection == Vector3Int.down)
+        {
+            isLiftingToolDown = true;
+        }
 
-    //    yield return liftToolAnimationPause;
+        yield return liftToolAnimationPause;
 
-    //    // Set Grid property details for watered ground
-    //    if (gridPropertyDetails.daysSinceWatered == -1)
-    //    {
-    //        gridPropertyDetails.daysSinceWatered = 0;
-    //    }
+        // Set Grid property details for watered ground
+        if (gridPropertyDetails.daysSinceWatered == -1)
+        {
+            gridPropertyDetails.daysSinceWatered = 0;
+        }
 
-    //    // Set grid property to watered
-    //    GridPropertiesManager.Instance.SetGridPropertyDetails(gridPropertyDetails.gridX, gridPropertyDetails.gridY, gridPropertyDetails);
+        // Set grid property to watered
+        GridPropertiesManager.Instance.SetGridPropertyDetails(gridPropertyDetails.gridX, gridPropertyDetails.gridY, gridPropertyDetails);
 
-    //    // Display watered grid tiles
-    //    GridPropertiesManager.Instance.DisplayWateredGround(gridPropertyDetails);
+        // Display watered grid tiles
+        //GridPropertiesManager.Instance.DisplayWateredGround(gridPropertyDetails);
 
-    //    // After animation pause
-    //    yield return afterLiftToolAnimationPause;
+        // After animation pause
+        yield return afterLiftToolAnimationPause;
 
-    //    PlayerInputIsDisabled = false;
-    //    playerToolUseDisabled = false;
-    //}
+        PlayerInputIsDisabled = false;
+        playerToolUseDisabled = false;
+    }
 
     //private void ChopInPlayerDirection(GridPropertyDetails gridPropertyDetails, ItemDetails equippedItemDetails, Vector3Int playerDirection)
     //{
