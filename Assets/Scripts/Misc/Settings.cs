@@ -19,8 +19,8 @@ public static class Settings
     //public const int maxGridHeight = 99999;
     public static Vector2 cursorSize = Vector2.one;
 
-    //// Player
-    //public static float playerCentreYOffset = 0.875f;
+    // Player
+    public static float playerCentreYOffset = 0.875f;
 
     // Player Movement
     public const float runningSpeed = 5.333f;
