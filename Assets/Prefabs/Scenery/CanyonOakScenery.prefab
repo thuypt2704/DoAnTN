@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 6743312225175724706}
   - component: {fileID: 2238079311918377816}
   m_Layer: 0
-  m_Name: CanyonOakScenary
+  m_Name: CanyonOakScenery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

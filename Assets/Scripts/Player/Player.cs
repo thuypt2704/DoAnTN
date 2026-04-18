@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class Player : SingletonMonobehaviour<Player>
 {
-
     private WaitForSeconds afterLiftToolAnimationPause;
     private WaitForSeconds afterUseToolAnimationPause;
     //private WaitForSeconds afterPickAnimationPause;
@@ -870,12 +869,11 @@ public class Player : SingletonMonobehaviour<Player>
             TimeManager.Instance.TestAdvanceGameDay();
         }
 
-        // Test scene unload/load
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            SceneControllerManager.Instance.FadeAndLoadScene(SceneName.Scene1_Farm.ToString(), transform.position);
-        }
-
+        //// Test scene unload/load
+        //if (Input.GetKeyDown(KeyCode.L))
+        //{
+        //    SceneControllerManager.Instance.FadeAndLoadScene(SceneName.Scene1_Farm.ToString(), transform.position);
+        //}
     }
 
     private void ResetMovement()
