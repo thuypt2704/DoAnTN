@@ -1,18 +1,16 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SO_CropDetailsList : MonoBehaviour
+[CreateAssetMenu(fileName = "CropDetailsList", menuName = "Scriptable Objects/Crop/Crop Details List")]
+public class SO_CropDetailsList : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    public List<CropDetails> cropDetails;
 
-    // Update is called once per frame
-    void Update()
+
+    public CropDetails GetCropDetails(int seedItemCode)
     {
-        
+
+        return cropDetails.Find(x => x.seedItemCode == seedItemCode);
     }
 }
