@@ -32,14 +32,14 @@ public static class EventHandler
 
 
 
-    //// Harvest Action Effect Event
-    //public static event Action<Vector3, HarvestActionEffect> HarvestActionEffectEvent;
+    // Harvest Action Effect Event
+    public static event Action<Vector3, HarvestActionEffect> HarvestActionEffectEvent;
 
-    //public static void CallHarvestActionEffectEvent(Vector3 effectPosition, HarvestActionEffect harvestActionEffect)
-    //{
-    //    if (HarvestActionEffectEvent != null)
-    //        HarvestActionEffectEvent(effectPosition, harvestActionEffect);
-    //}
+    public static void CallHarvestActionEffectEvent(Vector3 effectPosition, HarvestActionEffect harvestActionEffect)
+    {
+        if (HarvestActionEffectEvent != null)
+            HarvestActionEffectEvent(effectPosition, harvestActionEffect);
+    }
 
 
     //Inventory Updated Event
@@ -57,7 +57,7 @@ public static class EventHandler
     //{
     //    if (InstantiateCropPrefabsEvent != null)
     //    {
-    //        InstantiateCropPrefabsEvent();
+    //        InstantiateCrop PrefabsEvent();
     //    }
     //}
 

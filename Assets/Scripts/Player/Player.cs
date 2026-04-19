@@ -757,8 +757,8 @@ public class Player : SingletonMonobehaviour<Player>
                         // Effect position
                         Vector3 effectPosition = new Vector3(itemArray[i].transform.position.x, itemArray[i].transform.position.y + Settings.gridCellSize / 2f, itemArray[i].transform.position.z);
 
-                        //// Trigger reaping effect
-                        //EventHandler.CallHarvestActionEffectEvent(effectPosition, HarvestActionEffect.reaping);
+                        // Trigger reaping effect
+                        EventHandler.CallHarvestActionEffectEvent(effectPosition, HarvestActionEffect.reaping);
 
                         ////Play sound
                         //AudioManager.Instance.PlaySound(SoundName.effectScythe);
